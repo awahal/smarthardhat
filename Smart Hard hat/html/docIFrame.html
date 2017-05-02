@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Upload</title>
+<style>
+table {
+    width:100%;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th, td {
+   text-align: center;
+   padding: 15px;
+}
+th {
+  background-color: rgb(2,151,214);
+  color: white;
+}
+td {
+  background-color: rgb(243,243,243);
+  color: black;
+}
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+   <th>Image Upload</th>
+  </tr>
+  <tr>
+   <td>
+    <form action="uploadIframe.php" method="post" enctype="multipart/form-data">
+    Select image to upload to hard hat display:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+    </form>
+   </td>
+  </tr>
+</table>
+</body>
+</html>

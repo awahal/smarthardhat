@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>ECE 4012 Smart Hard Hat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+    <style>
+table {
+    width:75%;
+}
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+th, td {
+   text-align: center;
+   padding: 15px;
+}
+th {
+  background-color: rgb(2,151,214);
+  color: white;
+}
+td {
+background-color: rgb(243,243,243);
+color: black;
+}
+</style>
+  </head>
+  <body>
+        <h1>
+        <left>
+        ECE 4012 Smart Hard Hat
+        </left>
+        <right>
+        <img align="right" src="FL62738LOGO.jpeg" alt="FPL Logo" style="width:140px;height:107px;">
+        </right>
+        </h1>
+	<ul>
+	 <li><a href="index.html">Home</a></li>
+	 <li><a href="GPSpage.html">GPS</a></li>
+	 <li><a class="active" href="docPage.html">Documents</a></li>
+	 <li><a href="imagePage.html">Image</a></li>
+	 <li><a href="vidCallPage.html">Video Call</a></li>
+	</ul>
+	<div class="main">
+	  <div class="content">
+	<center>
+	 <br>
+         <br>
+	<table>
+	  <tr>
+	   <th>Image Upload</th>
+	  </tr>
+	  <tr>
+	   <td>
+	    <form action="upload.php" method="post" enctype="multipart/form-data">
+	    Select image to upload to hard hat display:
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+	    <input type="submit" value="Upload Image" name="submit">
+	    </form>
+	   </td>
+	  </tr>
+	</table>
+	 <br>
+         <br>
+	</center>
+	 </div>
+	</div>	
+      <div class="footer">
+	<p>Team Smart Hard Hat</p>
+     </div>
+  </body>
+</html>
